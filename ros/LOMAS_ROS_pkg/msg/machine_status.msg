@@ -1,0 +1,11 @@
+bool  IsSynced
+bool  SequensStarted
+bool  MachineMoving
+uint8 SequenseNr
+uint8 ErrorNr
+uint16 Interval
+float32 X
+float32 Y
+float32 Z
+time StartTime
+time FinishedTime
