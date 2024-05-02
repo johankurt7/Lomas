@@ -1,6 +1,6 @@
 // Auto-generated. Do not edit!
 
-// (in-package LOMAS_ROS_pkg.msg)
+// (in-package lomas_ros_pkg.msg)
 
 
 "use strict";
@@ -52,7 +52,7 @@ class watering_command {
 
   static datatype() {
     // Returns string type for a message object
-    return 'LOMAS_ROS_pkg/watering_command';
+    return 'lomas_ros_pkg/watering_command';
   }
 
   static md5sum() {

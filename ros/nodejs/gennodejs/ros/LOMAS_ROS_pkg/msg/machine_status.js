@@ -1,6 +1,6 @@
 // Auto-generated. Do not edit!
 
-// (in-package LOMAS_ROS_pkg.msg)
+// (in-package lomas_ros_pkg.msg)
 
 
 "use strict";
@@ -162,7 +162,7 @@ class machine_status {
 
   static datatype() {
     // Returns string type for a message object
-    return 'LOMAS_ROS_pkg/machine_status';
+    return 'lomas_ros_pkg/machine_status';
   }
 
   static md5sum() {
