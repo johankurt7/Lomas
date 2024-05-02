@@ -16,12 +16,12 @@ setup(
     maintainer='Johan Kurt',
     maintainer_email='johan10_kurt@hotmail.com',
     description='A ROS 2 package for managing LOMAS robotics operations',
-    license='MIT',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'machine_node_2 = LOMAS_ROS_pkg.machine_node_2:main',
-            'watering_node = LOMAS_ROS_pkg.watering_node_2:main',
+            'watering_node_2 = LOMAS_ROS_pkg.watering_node_2:main',
             'seq_generation_node = LOMAS_ROS_pkg.seq_generation_node:main',
             'gcode_sender_test = LOMAS_ROS_pkg.gcodesender_test:main'
         ],
