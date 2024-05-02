@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'LOMAS_ROS_pkg'
+package_name = 'lomas_ros_pkg'
 
 setup(
     name=package_name,
