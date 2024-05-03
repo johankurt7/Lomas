@@ -3,7 +3,7 @@ from rclpy.node import Node
 from rclpy.parameter import Parameter
 
 from pyfirmata import Arduino, util
-from LOMAS_ROS_pkg.msg import WateringStatus
+from lomas_ros_pkg.msgfolder.msg import WateringStatus
 from std_msgs.msg import UInt8, Bool
 
 # Global variable

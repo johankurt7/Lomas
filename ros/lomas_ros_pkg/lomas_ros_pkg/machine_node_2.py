@@ -7,7 +7,7 @@ import time
 import argparse
 
 from serial import SerialException
-from lomas_ros_pkg.msg import MachineStatus
+from lomas_ros_pkg.msgfolder.msg import MachineStatus
 from std_msgs.msg import *
 
 
@@ -24,13 +24,13 @@ class MachineNode(Node):
             ]
         )
         self.loadParameters()
-        self.pubMachineStatus = self.create_publisher(machine_status, 'LOMAS_MachineState', 10)
+        self.pubMachineStatus = self.create_publisher(MachineStatus, 'LOMAS_MachineState', 10)
         self.sub_cmd = self.create_subscription(UInt8, 'LOMAS_MachineCmd', self.cmd_callback, 10)
         self.sub_stop = self.create_subscription(Bool, 'LOMAS_MachineStop', self.stop_callback, 10)
         self.sub_abort = self.create_subscription(Bool, 'LOMAS_MachineAbort', self.abort_callback, 10)
         self.sub_intervall = self.create_subscription(UInt8, 'LOMAS_MachineSetIntervall', self.intervall_callback, 10)
 
-        self.status = machine_status()
+        self.status = MachineStatus()
         self.status.ErrorNr = 99
         self.stop = False
         self.abort = False
