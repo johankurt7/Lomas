@@ -18,6 +18,13 @@ setup(
     description='A ROS 2 package for managing LOMAS robotics operations',
     license='Apache License 2.0',
     tests_require=['pytest'],
+    py_modules=[
+        'lomas_ros_pkg.__init__',
+        'lomas_ros_pkg.gcodesender_test',
+        'lomas_ros_pkg.machine_node_2',
+        'lomas_ros_pkg.seq_generation_node',
+        'lomas_ros_pkg.watering_node_2'
+    ],
     entry_points={
         'console_scripts': [
             'machine_node_2 = lomas_ros_pkg.machine_node_2:main',
