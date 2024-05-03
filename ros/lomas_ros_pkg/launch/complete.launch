@@ -1,6 +1,6 @@
 <launch>
 
-  <node pkg="LOMAS_ROS_pkg" type="watering_node.py" name="watering" output="screen">
+  <node pkg="lomas_ros_pkg" type="watering_node.py" name="watering" output="screen">
     <param name="sim_port" value="true"/>
     <param name="port" value="/dev/ttyACM0"/>
     <param name="watering_interval" value="120"/>
@@ -8,14 +8,14 @@
     <param name="watering_valve_pin" value="13"/>
   </node>
 
-  <node pkg="LOMAS_ROS_pkg" type="machine_node.py" name="machine" output="screen">
+  <node pkg="lomas_ros_pkg" type="machine_node.py" name="machine" output="screen">
     <param name="sim_port" value="true"/>
     <param name="port" value="/dev/ttyUSB0"/>
     <param name="path" value="/media/gcode/"/>
     <param name="cultivation_interval" value="120"/>
   </node>
 
-  <node pkg="LOMAS_ROS_pkg" type="seq_generation_node.py" name="seq_generation" output="screen">
+  <node pkg="lomas_ros_pkg" type="seq_generation_node.py" name="seq_generation" output="screen">
     <param name="path" value="/media/gcode/"/>
     <param name="path_to_image" value="/home/pi/node-red-static/"/>
     <param name="area_width" value="305"/>

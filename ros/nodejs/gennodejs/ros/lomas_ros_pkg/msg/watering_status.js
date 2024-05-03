@@ -1,6 +1,6 @@
 // Auto-generated. Do not edit!
 
-// (in-package lomas_ros_pkg.msg)
+// (in-package lomas_ros_pkg.msgfolder)
 
 
 "use strict";

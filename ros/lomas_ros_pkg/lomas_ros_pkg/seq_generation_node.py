@@ -4,7 +4,7 @@
 import roslib
 
 
-from std_msgs.msg import *
+from std_msgs.msgfolder import *
 
 def main():
 
