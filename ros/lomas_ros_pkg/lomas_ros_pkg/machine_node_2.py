@@ -7,7 +7,7 @@ import time
 import argparse
 
 from serial import SerialException
-from lomas_ros_pkg.msgfolder.msg import MachineStatus
+from msgfolder.msg import MachineStatus
 from std_msgs.msg import *
 
 
