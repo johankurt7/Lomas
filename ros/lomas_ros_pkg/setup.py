@@ -29,8 +29,6 @@ setup(
         'console_scripts': [
             'machine_node_2 = lomas_ros_pkg.machine_node_2:main',
             'watering_node_2 = lomas_ros_pkg.watering_node_2:main',
-            #'seq_generation_node = lomas_ros_pkg.seq_generation_node:main',
-            #'gcode_sender_test = lomas_ros_pkg.gcodesender_test:main'
         ],
     },
 )

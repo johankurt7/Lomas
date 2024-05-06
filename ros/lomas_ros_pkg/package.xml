@@ -16,7 +16,7 @@
   <!-- Package format 3 allows using <exec_depend> instead of <run_depend> for clearer semantics -->
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
-
+  <exec_depend>msgfolder</exec_depend>
   <!-- This tells other tools and launch systems that this is a ROS 2 Python package -->
   <export>
     <build_type>ament_python</build_type>

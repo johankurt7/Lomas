@@ -10,7 +10,6 @@ from serial import SerialException
 from msgfolder.msg import MachineStatus
 from std_msgs.msg import *
 
-
 class MachineNode(Node):
     def __init__(self):
         super().__init__('machine_node')
