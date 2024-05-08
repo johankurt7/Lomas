@@ -23,7 +23,7 @@ class MachineNode(Node):
             ]
         )
         self.loadParameters()
-        self.pubMachineStatus = self.create_publisher(MachineStatus, 'LOMAS_MachineState', 10)
+        self.pub_machine_status = self.create_publisher(MachineStatus, 'LOMAS_MachineState', 10)
         self.sub_cmd = self.create_subscription(UInt8, 'LOMAS_MachineCmd', self.cmd_callback, 10)
         self.sub_stop = self.create_subscription(Bool, 'LOMAS_MachineStop', self.stop_callback, 10)
         self.sub_abort = self.create_subscription(Bool, 'LOMAS_MachineAbort', self.abort_callback, 10)

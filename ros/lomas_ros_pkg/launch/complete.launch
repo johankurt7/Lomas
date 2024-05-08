@@ -8,7 +8,7 @@
     <param name="watering_valve_pin" value="13"/>
   </node>
 
-  <node pkg="lomas_ros_pkg" type="machine_node.py" name="machine" output="screen">
+  <node pkg="lomas_ros_pkg" type="machine_node_2.py" name="machine" output="screen">
     <param name="sim_port" value="true"/>
     <param name="port" value="/dev/ttyUSB0"/>
     <param name="path" value="/media/gcode/"/>
